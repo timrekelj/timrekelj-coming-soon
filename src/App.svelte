@@ -25,8 +25,6 @@
 		colors.push(available_colors[Math.floor(Math.random() * 4)]);
 	}
 
-	let delay = '2s';
-
 </script>
 
 <svelte:head>
@@ -66,7 +64,7 @@
 				<i class="material-icons">nightlight</i>
 			{/if}
 		</Button>
-	</div>duration
+	</div>
 	<div class="title-box">
 		<div class="center-help">
 			<h1>"Website comming soon"</h1>
