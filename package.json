@@ -18,6 +18,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@emotion/css": "^11.7.1",
+    "animejs": "^3.2.1",
     "sirv-cli": "^1.0.0"
   }
 }
