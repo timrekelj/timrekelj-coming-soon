@@ -33,28 +33,9 @@
 
 <main>
 
-	<div class="box" style="--left: {lefts[0]}; --color: {colors[0]}; --duration: {durations[0]}; --delay: {delays[0]}; --size: {sizes[0]}"></div>
-	<div class="box" style="--left: {lefts[1]}; --color: {colors[1]}; --duration: {durations[1]}; --delay: {delays[1]}; --size: {sizes[1]}"></div>
-	<div class="box" style="--left: {lefts[2]}; --color: {colors[2]}; --duration: {durations[2]}; --delay: {delays[2]}; --size: {sizes[2]}"></div>
-	<div class="box" style="--left: {lefts[3]}; --color: {colors[3]}; --duration: {durations[3]}; --delay: {delays[3]}; --size: {sizes[3]}"></div>
-	<div class="box" style="--left: {lefts[4]}; --color: {colors[4]}; --duration: {durations[4]}; --delay: {delays[4]}; --size: {sizes[4]}"></div>
-	<div class="box" style="--left: {lefts[5]}; --color: {colors[5]}; --duration: {durations[5]}; --delay: {delays[5]}; --size: {sizes[5]}"></div>
-	<div class="box" style="--left: {lefts[6]}; --color: {colors[6]}; --duration: {durations[6]}; --delay: {delays[6]}; --size: {sizes[6]}"></div>
-	<div class="box" style="--left: {lefts[7]}; --color: {colors[7]}; --duration: {durations[7]}; --delay: {delays[7]}; --size: {sizes[7]}"></div>
-	<div class="box" style="--left: {lefts[8]}; --color: {colors[8]}; --duration: {durations[8]}; --delay: {delays[8]}; --size: {sizes[8]}"></div>
-	<div class="box" style="--left: {lefts[9]}; --color: {colors[9]}; --duration: {durations[9]}; --delay: {delays[9]}; --size: {sizes[9]}"></div>
-	<div class="box" style="--left: {lefts[10]}; --color: {colors[10]}; --duration: {durations[10]}; --delay: {delays[10]}; --size: {sizes[10]}"></div>
-	<div class="box" style="--left: {lefts[11]}; --color: {colors[11]}; --duration: {durations[11]}; --delay: {delays[11]}; --size: {sizes[11]}"></div>
-	<div class="box" style="--left: {lefts[12]}; --color: {colors[12]}; --duration: {durations[12]}; --delay: {delays[12]}; --size: {sizes[12]}"></div>
-	<div class="box" style="--left: {lefts[13]}; --color: {colors[13]}; --duration: {durations[13]}; --delay: {delays[13]}; --size: {sizes[13]}"></div>
-	<div class="box" style="--left: {lefts[14]}; --color: {colors[14]}; --duration: {durations[14]}; --delay: {delays[14]}; --size: {sizes[14]}"></div>
-	<div class="box" style="--left: {lefts[15]}; --color: {colors[15]}; --duration: {durations[15]}; --delay: {delays[15]}; --size: {sizes[15]}"></div>
-	<div class="box" style="--left: {lefts[16]}; --color: {colors[16]}; --duration: {durations[16]}; --delay: {delays[16]}; --size: {sizes[16]}"></div>
-	<div class="box" style="--left: {lefts[17]}; --color: {colors[17]}; --duration: {durations[17]}; --delay: {delays[17]}; --size: {sizes[17]}"></div>
-	<div class="box" style="--left: {lefts[18]}; --color: {colors[18]}; --duration: {durations[18]}; --delay: {delays[18]}; --size: {sizes[18]}"></div>
-	<div class="box" style="--left: {lefts[19]}; --color: {colors[19]}; --duration: {durations[19]}; --delay: {delays[19]}; --size: {sizes[19]}"></div>
-	<div class="box" style="--left: {lefts[20]}; --color: {colors[20]}; --duration: {durations[20]}; --delay: {delays[20]}; --size: {sizes[20]}"></div>
-	<div class="box" style="--left: {lefts[21]}; --color: {colors[21]}; --duration: {durations[21]}; --delay: {delays[21]}; --size: {sizes[21]}"></div>
+	{ #each Array(21) as _, i }
+		<div class="box" style="--left: {lefts[i]}; --color: {colors[i]}; --duration: {durations[i]}; --delay: {delays[i]}; --size: {sizes[i]}"></div>
+	{ /each }
 
 	<div class="toggle-darkmode">
 		<Button bind:value={dark} on:submit={handleSubmit}>
@@ -211,10 +192,24 @@
 		}
 		.title-box {
 			width: 90%;
+			font-size: .7em;
 		}
 		.mobile-toggle-darkmode {
 			visibility: visible;
 			width: 70px;
+		}
+		
+		.footer {
+			bottom: 10px;
+			width: 85%;
+		}
+
+		img {
+			width: 40px;
+		}
+
+		i {
+			width: 40px;
 		}
 	}
 
