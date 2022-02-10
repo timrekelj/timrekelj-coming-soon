@@ -68,6 +68,7 @@
 			<a href="https://www.instagram.com/timrekelj/"><img src="icons/instagram.svg" alt="instagram" height="50px"></a>
 			<a href="https://twitter.com/timrekelj"><img src="icons/twitter.svg" alt="twitter" height="50px"></a>
 			<a href="https://open.spotify.com/user/9nksd7kzg4meppj2r4kg6cldg?si=fce19c5d8fb34c31"><img src="icons/spotify.svg" alt="spotify" height="50px"></a>
+			<a href="https://www.buymeacoffee.com/timrekelj"><img src="icons/buymecoffee.svg" alt="buy me coffee" height="50px"></a>
 		</div>
 	</div>
 </main>
